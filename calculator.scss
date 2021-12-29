@@ -8,14 +8,24 @@
     body {
 
         #container {
+            width: 100vw;
+            height: 100vh;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             >h5 {
-
+                text-align: end;
             }
 
             .display-container {
+                display: flex;
+                flex-direction: column;
 
                 #display-main {
+                    background-color: aqua;
 
                     #display-upper {
 
@@ -28,13 +38,113 @@
             }
 
             #container-button {
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 20% 20% 20% 20% 20% ;
+                gap: 0.75rem;
+
+                grid-template-areas: 
+                "AC C x² percent"
+                "7 8 9 plus"
+                "4 5 6 minus"
+                "1 2 3 multip"
+                "0 comma division equal"
+                ;
 
                 .small-button {
-
+                    border: solid black;
+                    border-radius: 10% 10% 10% 10% / 20% 20% 20% 20% ;
+                    width: 5rem;
+                    height: 2rem;
+                    justify-self: center;
                 }
 
                 .button {
+                    border: solid black;
+                    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10% ;
+                    width: 5rem;
+                    height: 4rem;
+                    justify-self: center;
+                }
 
+                #AC {
+                    grid-area:"AC";
+                }
+
+                #C {
+                    grid-area:"C";
+                }
+                
+                #x² {
+                    grid-area:"x²";
+                }
+
+                #percent {
+                    grid-area:"percent";
+                }
+
+                #num7 {
+                    grid-area:"num7";
+                }
+
+                #num8 {
+                    grid-area:"num8";
+                }
+
+                #num9 {
+                    grid-area:"num9";
+                }
+
+                #plus {
+                    grid-area:"plus";
+                }
+
+                #num4 {
+                    grid-area:"num4";
+                }
+
+                #num5 {
+                    grid-area:"num5";
+                }
+
+                #num6 {
+                    grid-area:"num6";
+                }
+
+                #minus {
+                    grid-area:"minus";
+                }
+
+                #num1 {
+                    grid-area:"num1";
+                }
+
+                #num2 {
+                    grid-area:"num2";
+                }
+
+                #num3 {
+                    grid-area:"num3";
+                }
+
+                #multip {
+                    grid-area:"multip";
+                }
+
+                #num0 {
+                    grid-area:"num0";
+                }
+
+                #comma {
+                    grid-area:"comma";
+                }
+
+                #equal {
+                    grid-area:"equal";
+                }
+
+                #division {
+                    grid-area:"division";
                 }
             }
         }
